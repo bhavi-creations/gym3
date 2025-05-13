@@ -132,6 +132,7 @@ ol {
 }
 
 .set-bg {
+	/* background-image: url(../img/2.png) !important; */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -176,6 +177,7 @@ ol {
 	background: #233EDE;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+	
 }
 
 /* Preloder */
@@ -366,7 +368,7 @@ ol {
 	display: inline-block;
 	width: 48px;
 	height: 48px;
-	background: #081624;
+	background: #0080ff;
 	border-radius: 50%;
 	color: #fff;
 	line-height: 48px;
@@ -455,17 +457,31 @@ ol {
 -----------------------*/
 
 .single-slide {
-	height: 895px;
-	padding-top: 343px;
+	/* height: 500px; */
+	padding-top: 140px;
+	/* padding-top: 343px; */
 	text-align: center;
+}
+@media (max-width:768px) {
+	.single-slide {
+		height: 300px;
+	}
+	
+}
+
+@media (min-width:769px) {
+	
+	.single-slide {
+		height: 500px;
+	}
 }
 
 .single-slide .play-btn {
 	color: #fff;
-	background: #233EDE;
+	background: #ffffff;
 	display: inline-block;
-	height: 56px;
-	width: 56px;
+	/* height: 56px;
+	width: 56px; */
 	line-height: 58px;
 	text-align: center;
 	border-radius: 50%;
@@ -2402,4 +2418,53 @@ ol {
 	.single-blog-item .blog-text h2 {
 		font-size: 20px;
 	}
+}
+
+
+
+
+.footer-menu ul li {
+	font-size: 25px !important;
+	list-style: none;
+}
+
+
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	margin-bottom: 8px;
+	color: white !important;
+}
+
+
+
+.gallery_section img{
+	padding-bottom: 40px;
+}
+
+
+
+.gallery_section {
+	 padding: 40px 0px;
+}
+
+
+
+/* images hover  */
+.hover-img img {
+    transition: transform 0.3s ease;
+}
+
+.hover-img:hover img {
+    transform: scale(1.05); /* You can also use translate for direction movement */
+}
+
+.hover-img:hover img {
+    transform: translateY(-5px);
+}
+
+.hover-img:hover img {
+    transform: scale(1.05) translateY(-5px);
 }
